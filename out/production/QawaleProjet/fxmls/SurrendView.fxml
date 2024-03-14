@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.media.MediaView?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="300.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.SurrendController">
+   <children>
+      <MediaView fx:id="mediaId" fitHeight="330.0" fitWidth="600.0" />
+      <Label layoutX="93.0" layoutY="128.0" text="Votre adversaire a pris la fuite !" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman Bold" size="32.0" />
+         </font>
+      </Label>
+      <Button fx:id="retour" layoutX="121.0" layoutY="251.0" mnemonicParsing="false" onMouseClicked="#retourLobby" onMouseEntered="#entrer" onMouseExited="#sortie" style="-fx-background-color: #FFFFFF; -fx-background-radius: 20;" text="Revenir au lobby">
+         <font>
+            <Font name="Comic Sans MS Bold" size="18.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Button fx:id="quitter" layoutX="333.0" layoutY="251.0" mnemonicParsing="false" onMouseClicked="#quitterJeu" onMouseEntered="#entrerQuitter" onMouseExited="#sortieQuitter" style="-fx-background-color: #FFFFFF; -fx-background-radius: 20;" text="Quitter le jeu">
+         <font>
+            <Font name="Comic Sans MS Bold" size="18.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+   </children>
+</AnchorPane>

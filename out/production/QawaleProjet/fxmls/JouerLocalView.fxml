@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="900.0" prefWidth="1200.0" style="-fx-background-color: #FAE5D3;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.JouerLocalController">
+   <children>
+      <Text fill="#684012" layoutX="243.0" layoutY="365.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Joueur 1 :">
+         <font>
+            <Font name="Comic Sans MS Bold" size="45.0" />
+         </font>
+      </Text>
+      <TextField fx:id="joueur1" layoutX="180.0" layoutY="419.0" prefHeight="58.0" prefWidth="337.0" promptText="Entrer votre nom..." style="-fx-background-radius: 20;">
+         <font>
+            <Font name="Comic Sans MS Bold" size="30.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </TextField>
+      <Text fill="#684012" layoutX="751.0" layoutY="366.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Joueur 2 :">
+         <font>
+            <Font name="Comic Sans MS Bold" size="45.0" />
+         </font>
+      </Text>
+      <TextField fx:id="joueur2" layoutX="701.0" layoutY="419.0" prefHeight="58.0" prefWidth="337.0" promptText="Entrer votre nom..." style="-fx-background-radius: 20;">
+         <font>
+            <Font name="Comic Sans MS Bold" size="30.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </TextField>
+      <Text fill="#684012" layoutX="384.0" layoutY="154.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Jouer en Local" underline="true">
+         <font>
+            <Font name="Comic Sans MS Bold" size="64.0" />
+         </font>
+      </Text>
+      <Line endX="-100.0" endY="279.58349609375" layoutX="712.0" layoutY="287.0" startX="-100.0" startY="-12.148193359375" stroke="#684012" strokeWidth="5.0" />
+      <Button fx:id="jouer" layoutX="443.0" layoutY="652.0" mnemonicParsing="false" onMouseClicked="#jouerAQawale" onMouseEntered="#changeColorOnMouseEnteredJouer" onMouseExited="#changeColorOnMouseExitedJouer" style="-fx-background-color: #FFFFFF; -fx-background-radius: 20;" text="Lancer la partie" textFill="#684012">
+         <font>
+            <Font name="Comic Sans MS Bold" size="36.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Button fx:id="retour" layoutX="85.0" layoutY="74.0" mnemonicParsing="false" onMouseClicked="#retourMenu" onMouseEntered="#changeColorOnMouseEnteredRetour" onMouseExited="#changeColorOnMouseExitedRetour" prefHeight="67.0" prefWidth="72.0" style="-fx-background-color: #FAE5D3;">
+         <effect>
+            <DropShadow />
+         </effect>
+         <graphic>
+            <ImageView fitHeight="57.0" fitWidth="51.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../ressources/arrow.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ReglesJeuController">
+   <children>
+      <ScrollPane prefHeight="900.0" prefWidth="1020.0">
+         <content>
+            <VBox prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #FFFFFF;">
+               <children>
+                  <ImageView fitHeight="1000.0" fitWidth="1000.0">
+                     <image>
+                        <Image url="@../ressources/regles-1.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="1000.0" fitWidth="1000.0">
+                     <image>
+                        <Image url="@../ressources/regles-2.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="1000.0" fitWidth="1000.0">
+                     <image>
+                        <Image url="@../ressources/regles-3.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="1000.0" fitWidth="1000.0">
+                     <image>
+                        <Image url="@../ressources/regles-4.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </VBox>
+         </content>
+      </ScrollPane>
+      <Button fx:id="retour" layoutX="62.0" layoutY="50.0" mnemonicParsing="false" onMouseClicked="#retourMenu" onMouseEntered="#entrer" onMouseExited="#sortie" prefHeight="79.0" prefWidth="85.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 20;">
+         <graphic>
+            <ImageView fitHeight="78.0" fitWidth="90.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../ressources/arrow.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <effect>
+            <DropShadow />
+         </effect>
+         <font>
+            <Font size="1.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
